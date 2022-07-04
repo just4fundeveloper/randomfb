@@ -1,10 +1,8 @@
 def solutions(S,T):
-    
+    if(S == T):
+        return "NOTHING"
+        
     try:
-        if(S == T):
-            return "NOTHING"
-        
-        
         St = S + T[len(T)-1] 
         if(T == St):
             return f"ADD {T[len(T)-1]}"
