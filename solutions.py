@@ -12,10 +12,9 @@ def solutions(S,T):
     try:
         i = 0
         for c in S:
-            if(S[i] == S[i+1]):
-                mergedS = S[0 : i : ] + S[i + 1 : :]
-                if(mergedS == T):
-                    return f"JOIN {S[i]}"
+            mergedS = S[0 : i : ] + S[i + 1 : :]
+            if(mergedS == T):
+                return f"JOIN {S[i]}"
             i+=1
     except:
         pass
